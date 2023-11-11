@@ -4,6 +4,16 @@
  export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: [
+        '"Cormorant Upright, serif"',
+        '"Open Sans, sans-serif"',
+        {
+          fontFeatureSettings: '"tnum", "lnum"'
+        }
+      ]
+    },
+
     extend: {
       // backgroundImage: {
 
@@ -22,16 +32,16 @@
 
   
     },
-    screens: {
-      "tablet": "650px",
-      // => @media (min-width: 640px) { ... }
+    // screens: {
+    //   "tablet": "650px",
+    //   // => @media (min-width: 640px) { ... }
 
-      "laptop": "1024px",
-      // => @media (min-width: 1024px) { ... }
+    //   "laptop": "1024px",
+    //   // => @media (min-width: 1024px) { ... }
 
-      "desktop": "1280px",
-      // => @media (min-width: 1280px) { ... }
-    }
+    //   "desktop": "1280px",
+    //   // => @media (min-width: 1280px) { ... }
+    // }
   },
   plugins: [],
 };
