@@ -15,7 +15,7 @@ import { Navbar } from "./components";
 import "./App.css";
 
 const App = () => (
-  <div>
+  <div className = "app-bg app-wrapper">
     <Navbar />
     <Header />
     <AboutUs />
