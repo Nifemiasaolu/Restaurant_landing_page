@@ -6,6 +6,39 @@
 @tailwind utilities;
 
 
+@layer components {
+  .section-padding {
+    @apply px-[6rem] py-[4rem]
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center
+  }
+
+  .app-bg {
+    @apply bg-[url('./assets/bg.png')] bg-center bg-cover bg-repeat bg-fixed
+  }
+
+  .app-wrapper {
+    @apply flex justify-between items-center min-h-screen
+  }
+
+  .app-wrapper-info {
+    @apply flex-1 w-full flex justify-center items-start flex-col
+  }
+
+  .app-wrapper-img {
+    @apply flex-1 flex justify-center items-center ml-[2rem]
+  }
+
+  .app-wrapper-img-reverse {
+    @apply justify-start mr-[2rem]
+  }
+
+  .p-cormorant {
+    @apply text-white font-bold tracking-wider capitalize
+  }
+}
 
 :root {
   --font-base: 'Cormorant Upright', serif;
