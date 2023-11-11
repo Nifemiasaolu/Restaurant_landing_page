@@ -1,55 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .section-padding {
-    @apply px-[6rem] py-[4rem]
+    @apply px-[6rem] py-[4rem] sm:px-[2rem];
   }
 
   .flex-center {
-    @apply flex justify-center items-center
+    @apply flex items-center justify-center;
   }
 
   .app-bg {
-    @apply bg-[url('./assets/bg.png')] bg-center bg-cover bg-repeat bg-fixed
+    @apply bg-[url('./assets/bg.png')] bg-cover
+     bg-fixed bg-center bg-repeat;
   }
 
   .app-wrapper {
-    @apply flex justify-between items-center min-h-screen
+    @apply flex min-h-screen items-center justify-between md:flex-col;
   }
 
   .app-wrapper-info {
-    @apply flex-1 w-full flex justify-center items-start flex-col
+    @apply flex w-full flex-1 flex-col 
+    items-start justify-center;
   }
 
   .app-wrapper-img {
-    @apply flex-1 flex justify-center items-center ml-[2rem]
+    @apply ml-[2rem] flex flex-1 
+    items-center justify-center;
   }
 
   .app-wrapper-img-reverse {
-    @apply justify-start mr-[2rem]
+    @apply mr-[2rem] justify-start;
   }
 
   .p-cormorant {
-    @apply text-white font-bold tracking-wider capitalize
+    @apply font-["Cormorant_Upright"] text-lg font-bold 
+    capitalize leading-8 tracking-wider text-white sm:text-2xl 
+    lg:text-4xl lg:leading-[67px];
+  }
+
+  .p-opensans {
+    @apply font-["Open_Sans"] text-xs font-normal capitalize
+    leading-7 tracking-wider text-white sm:text-2xl
+    lg:text-3xl lg:leading-[50px];
+  }
+
+  .headtext-cormorant {
+    @apply text-golden font-["Cormorant_Upright"] text-[45px]
+    capitalize leading-[70px] sm:text-[64px] 
+    sm:leading-[83.2px] lg:text-[150px] lg:leading-[210px];
+  }
+
+  .spoon-img {
+    @apply w-[45px] lg:w-[80px];
   }
 }
 
 :root {
-  --font-base: 'Cormorant Upright', serif;
-  --font-alt: 'Open Sans', sans-serif;
-  
-  --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
+  --font-base: "Cormorant Upright", serif;
+  --font-alt: "Open Sans", sans-serif;
+
+  --color-golden: #dcca87;
+  --color-black: #0c0c0c;
   --color-gray: #545454;
-  --color-crimson: #F5EFDB;
-  --color-grey: #AAAAAA;
-  --color-white: #FFFFFF;
+  --color-crimson: #f5efdb;
+  --color-grey: #aaaaaa;
+  --color-white: #ffffff;
 }
 
 * {
@@ -65,29 +84,29 @@ a {
 }
 
 .slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
