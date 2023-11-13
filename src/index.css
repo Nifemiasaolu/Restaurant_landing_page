@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +17,8 @@
   }
 
   .app-wrapper {
-    @apply flex min-h-screen items-center justify-between md:flex-col;
+    @apply flex min-h-screen items-center 
+    justify-between md:flex-col;
   }
 
   .app-wrapper-info {
@@ -44,22 +43,52 @@
 
   .p-opensans {
     @apply font-["Open_Sans"] text-xs font-normal capitalize
-    leading-7 tracking-wider text-white sm:text-2xl
-    lg:text-3xl lg:leading-[50px];
+    leading-7 tracking-wider text-white sm:text-base
+    lg:text-lg lg:leading-[50px];
   }
 
   .headtext-cormorant {
-    @apply text-golden font-["Cormorant_Upright"] text-[45px]
-    capitalize leading-[70px] sm:text-[64px] 
+    @apply font-["Cormorant_Upright"] text-[45px] capitalize
+    leading-[70px] text-golden sm:text-[64px] 
     sm:leading-[83.2px] lg:text-[150px] lg:leading-[210px];
   }
 
   .spoon-img {
     @apply w-[45px] lg:w-[80px];
   }
+
+
+  .slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
 }
 
-:root {
+/* :root {
   --font-base: "Cormorant Upright", serif;
   --font-alt: "Open Sans", sans-serif;
 
@@ -69,7 +98,7 @@
   --color-crimson: #f5efdb;
   --color-grey: #aaaaaa;
   --color-white: #ffffff;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -81,33 +110,6 @@
 a {
   color: unset;
   text-decoration: none;
-}
-
-.slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
 }
 
 /* /// */
