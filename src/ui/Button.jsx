@@ -1,4 +1,3 @@
-import {GiHamburgerMenu} from "react-icons/md"
 
 function Button({ children }) {
   return (
@@ -9,7 +8,8 @@ function Button({ children }) {
     outline-none lg:text-4xl lg:leading-[67px]"
     >
       {children}
-      <GiHamburgerMenu/>
+      {/* <GiHamburgerMenu/> */}
+      
     </button>
   );
 }
