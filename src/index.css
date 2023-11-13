@@ -44,7 +44,7 @@
   .p-opensans {
     @apply font-["Open_Sans"] text-xs font-normal capitalize
     leading-7 tracking-wider text-white sm:text-base
-    lg:text-lg lg:leading-[50px];
+     lg:leading-[50px];
   }
 
   .headtext-cormorant {
