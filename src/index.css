@@ -36,19 +36,19 @@
   }
 
   .p-cormorant {
-    @apply font-["Cormorant_Upright"] text-lg font-bold 
+    @apply font-['Cormorant_Upright'] text-lg font-bold 
     capitalize leading-8 tracking-wider text-white sm:text-2xl 
     lg:text-4xl lg:leading-[67px];
   }
 
   .p-opensans {
-    @apply font-["Open_Sans"] text-xs font-normal capitalize
-    leading-7 tracking-wider text-white sm:text-base
+    @apply font-['Open_Sans'] text-xs font-normal capitalize
+    leading-7 tracking-wider text-white sm:text-sm
      lg:leading-[50px];
   }
 
   .headtext-cormorant {
-    @apply font-["Cormorant_Upright"] text-[45px] capitalize
+    @apply font-['Cormorant_Upright'] text-[45px] capitalize
     leading-[70px] text-golden sm:text-[64px] 
     sm:leading-[83.2px] lg:text-[150px] lg:leading-[210px];
   }
@@ -57,13 +57,11 @@
     @apply w-[45px] lg:w-[80px];
   }
 
-
   .slide-bottom {
     -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
-
 
   @-webkit-keyframes slide-bottom {
     0% {
