@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './AboutUs.css';
+import { images } from '../../constants';
 
 const AboutUs = () => (
-  <div>
+  <div className='app-bg flex-center section-padding'>
     AboutUs
   </div>
 );
