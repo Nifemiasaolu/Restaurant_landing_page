@@ -33,7 +33,7 @@ const Header = () => {
         <img
           src={images.welcome}
           alt="Header img"
-          className="aspect-square  w-[70%] shrink-0 sm:w-[80%]"
+          className="aspect-square  w-[80%] shrink-0"
         />
       </div>
     </div>
