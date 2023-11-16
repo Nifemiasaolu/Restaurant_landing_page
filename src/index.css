@@ -38,7 +38,7 @@
   .p-cormorant {
     @apply font-['Cormorant_Upright'] text-lg font-bold 
     capitalize leading-8 tracking-wider text-white sm:text-2xl 
-    lg:text-4xl lg:leading-[67px];
+    lg:text-2xl lg:leading-[50px];
   }
 
   .p-opensans {

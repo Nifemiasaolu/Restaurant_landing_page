@@ -26,7 +26,7 @@ const Header = () => {
           aliquam amet tellus{" "}
         </p>
 
-        <Button>Explore Menu</Button>
+        <Button type="primary">Explore Menu</Button>
       </div>
 
       <div className="flex items-center justify-center">
