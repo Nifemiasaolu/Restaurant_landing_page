@@ -43,7 +43,7 @@
 
   .p-opensans {
     @apply font-['Open_Sans'] text-xs font-normal capitalize
-    leading-7 tracking-wider text-white sm:text-sm
+    leading-7 tracking-wider text-white sm:text-xs
      lg:leading-[50px];
   }
 
