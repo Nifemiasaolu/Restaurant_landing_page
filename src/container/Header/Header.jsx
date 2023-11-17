@@ -13,7 +13,7 @@ const Header = () => {
       sm:gap-[6rem] lg:gap-[8rem]"
     >
       <div className="flex flex-col items-start justify-center ">
-        <SubHeading title="Chase the new flavour" />
+        <SubHeading title="Chase the new flavour" type="normal"/>
         <h1
           className="font-['Cormont_Upright'] text-[45px] 
            tracking-wider text-golden  "
