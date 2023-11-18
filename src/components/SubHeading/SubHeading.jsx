@@ -20,3 +20,4 @@ const SubHeading = ({ title, children, type }) => {
 };
 
 export default SubHeading;
+////
