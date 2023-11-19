@@ -27,7 +27,7 @@ const SpecialMenu = () => {
         {today}
       </SubHeading>
 
-      <div className="flex w-[100%] flex-col items-center justify-center gap-4 sm:flex-row">
+      <div className="flex w-[100%] flex-col items-center justify-center gap-4 md:flex-row">
         <div className="w-[100%]">
           <h4 className="text-white mb-4 text-center text-lg flex-1">Wine & Beer</h4>
           <ul className="">
@@ -37,11 +37,11 @@ const SpecialMenu = () => {
           </ul>
         </div>
 
-        <div className="flex-center my-4 h-[full] w-[100%] mx-2">
+        <div className="flex-center my-4 h-[50%] sm:h-[70%] w-[100%] mx-2 ">
           <img
             src={images.menu}
             alt="menu img"
-            className="aspect-square "
+            className=" "
           />
         </div>
 
