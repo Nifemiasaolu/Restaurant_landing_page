@@ -6,7 +6,7 @@ import Button from "../../ui/Button";
 const AboutUs = () => (
   <div
     id="about"
-    className=" section-padding app-bg flex-center relative h-screen"
+    className=" section-padding app-bg flex-center relative h-screen w-[full]"
   >
     <div>
       <img
@@ -17,33 +17,33 @@ const AboutUs = () => (
     </div>
 
     <div className="flex-center absolute gap-4">
-      <div className="flex flex-1 flex-col items-end justify-end text-right">
+      <div className="flex w-[100%] flex-1 flex-col items-end justify-end text-right ">
         <h3 className="p-cormorant text-golden">About Us</h3>
         <img src={images.spoon} alt="spoon img" className="spoon-img mb-4" />
-        <p className="w-[10rem] text-xs text-lightGrey sm:w-[20rem]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et
-        </p>
+        <div className="sm:w-[20rem]">
+          <p className=" text-xs text-lightGrey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+            pharetra adipiscing ultrices vulputate posuere tristique. In sed
+            odio nec aliquet eu proin mauris et
+          </p>
+        </div>
         <Button type="small">Read More</Button>
       </div>
 
-      <div>
-        <img
-          src={images.knife}
-          alt="knife"
-          className="mx-2 h-[25rem] w-[3rem] sm:h-[25rem] sm:w-[3rem]"
-        />
+      <div className="mx-2 h-[25rem] w-[3rem]">
+        <img src={images.knife} alt="knife" />
       </div>
 
       <div className="flex flex-1 flex-col items-start justify-end text-left">
         <h3 className="p-cormorant text-golden">Our History</h3>
         <img src={images.spoon} alt="spoon img" className="spoon-img mb-4" />
-        <p className="w-[10rem] text-xs  text-lightGrey sm:w-[20rem]">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-          odio nec aliquet
-        </p>
+        <div className="sm:w-[20rem]">
+          <p className=" text-xs  text-lightGrey ">
+            Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
+            Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
+            odio nec aliquet
+          </p>
+        </div>
         <Button type="small">Read More</Button>
       </div>
     </div>
