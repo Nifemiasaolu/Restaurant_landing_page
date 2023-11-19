@@ -27,7 +27,7 @@ const SpecialMenu = () => {
         {today}
       </SubHeading>
 
-      <div className="flex w-[100%] flex-col items-center justify-center gap-4 md:flex-row">
+      <div className="flex w-[100%] my-4 flex-col items-center justify-center gap-4 md:flex-row">
         <div className="w-[100%]">
           <h4 className="text-white mb-4 text-center text-lg flex-1">Wine & Beer</h4>
           <ul className="">
