@@ -4,6 +4,8 @@ import "./SpecialMenu.css";
 import { images, data } from "../../constants";
 import { SubHeading } from "../../components";
 import WineItem from "./WineItem";
+import CocktailItem from "./CocktailItem";
+import Button from "../../ui/Button";
 
 const SpecialMenu = () => {
   const today = `Today's Special`;
@@ -11,7 +13,7 @@ const SpecialMenu = () => {
   return (
     <div
       id="menu"
-      className="section-padding flex-center h-screen flex-col bg-black"
+      className="section-padding flex-center h-[full] flex-col bg-black"
     >
       {/* <div className="flex-center flex-col">
         <p className="text-xs capitalize text-lightGrey">
@@ -25,21 +27,38 @@ const SpecialMenu = () => {
         {today}
       </SubHeading>
 
-      <div>
-        <div>
-          <h4 className="text-white">Wine & Beer</h4>
-          <ul>
+      <div className="flex w-[100%] flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="w-[100%]">
+          <h4 className="text-white mb-4 text-center text-lg flex-1">Wine & Beer</h4>
+          <ul className="">
             {data.wines.map((wine, index) => (
-              <WineItem key={wine.item} wine={wine} />
+              <WineItem key={wine.item + index} wine={wine} />
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex-center my-4 h-[full] w-[100%] mx-2">
+          <img
+            src={images.menu}
+            alt="menu img"
+            className="aspect-square "
+          />
+        </div>
+
+        <div className=" w-[100%] mt-4">
+          <h4 className="text-white mb-4 text-lg text-center flex-1">Cocktails</h4>
+          <ul >
+            {data.cocktails.map((cocktail, index) => (
+              <CocktailItem key={cocktail.item + index} cocktail={cocktail} />
             ))}
           </ul>
         </div>
       </div>
+
+      <Button type="small"> View More</Button>
     </div>
   );
 };
 
 //////
 export default SpecialMenu;
-
-
