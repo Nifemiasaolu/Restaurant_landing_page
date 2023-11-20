@@ -12,15 +12,15 @@ const Header = () => {
      items-center justify-center gap-[4rem] bg-black sm:flex-row
       sm:gap-[6rem] lg:gap-[8rem]"
     >
-      <div className="flex flex-col items-start justify-center ">
+      <div className="flex flex-col items-start justify-center w-[100%]">
         <SubHeading title="Chase the new flavour" type="normal"/>
         <h1
-          className="font-['Cormont_Upright'] text-[45px] 
+          className="font-['Cormont_Upright'] text-[30px] md:text-[40px] 
            tracking-wider text-golden  "
         >
           The Key to Fine Dining
         </h1>
-        <p className="p-opensans my-[2rem]">
+        <p className="p-opensans my-[2rem] text-lightGrey">
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
           aliquam amet tellus{" "}
@@ -29,11 +29,11 @@ const Header = () => {
         <Button type="primary">Explore Menu</Button>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center w-[100%]">
         <img
           src={images.welcome}
           alt="Header img"
-          className="aspect-square  w-[80%] shrink-0"
+          className="aspect-square  w-[80%] sm:w-[80%]"
         />
       </div>
     </div>
