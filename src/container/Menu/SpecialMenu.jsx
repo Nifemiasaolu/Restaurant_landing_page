@@ -37,11 +37,11 @@ const SpecialMenu = () => {
           </ul>
         </div>
 
-        <div className="flex-center my-4 h-[50%] sm:w-[70%] md:w-[100%] w-[100%] mx-4 ">
+        <div className="flex-center my-4 h-[50%]  md:w-[100%] w-[360px] mx-4 ">
           <img
             src={images.menu}
             alt="menu img"
-            className=" "
+            // className=" w-[100%] h-[20%]"
           />
         </div>
 
