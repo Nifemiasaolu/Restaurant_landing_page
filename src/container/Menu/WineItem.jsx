@@ -8,12 +8,13 @@ function WineItem({ wine }) {
         </div>
 
         <div className="w-[100%]">
-
-
-        <div className="mx-4 h-[1px] w-[40px] bg-golden " />
+        <div className="mx-4 h-[1px] w-[60px] bg-golden " />
         </div>
 
+<div className="w-[20%]"> 
+
         <div className="text-white ">{wine.price}</div>
+</div>
       </div>
 
       <div className="p-opensans text-lightGrey">{wine.tags}</div>
