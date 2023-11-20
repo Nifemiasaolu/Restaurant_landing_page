@@ -6,7 +6,7 @@ function Button({ children, type }) {
   outline-none `
 
   const styles= {
-    primary: base + `px-6 py-2 lg:text-base lg:leading-[20px]`,
+    primary: base + `px-4 py-1 lg:text-base lg:leading-[20px]`,
     small: base + `px-3 text-xs mt-4 rounded-[3px]`,
   } 
 
