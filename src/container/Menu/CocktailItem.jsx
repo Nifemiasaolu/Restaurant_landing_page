@@ -2,22 +2,20 @@ function CocktailItem({ cocktail }) {
   return (
     <li className="mt-4">
       <div className="flex items-center justify-between">
-      <div className="w-[100%]">
+        <div className="w-[100%]">
+          <p className="text-golden">{cocktail.title}</p>
+        </div>
 
+        <div className="w-[100%]">
+          <div className="mx-4 h-[1px] w-[60px] bg-golden " />
+        </div>
 
-        <p className="text-golden">{cocktail.title}</p>
-      </div>
-      
-<div className="w-[100%]">
-
-
-        <div className="w-[40px] h-[1px] bg-golden mx-4 " />
-   
-</div>
+        <div className="w-[20%]"> 
         <div className="text-white">{cocktail.price}</div>
+        </div>
       </div>
 
-      <div className="text-lightGrey p-opensans w-[100%]">{cocktail.tags}</div>
+      <div className="p-opensans w-[100%] text-lightGrey">{cocktail.tags}</div>
     </li>
   );
 }
