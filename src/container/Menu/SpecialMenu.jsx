@@ -27,9 +27,11 @@ const SpecialMenu = () => {
         {today}
       </SubHeading>
 
-      <div className="flex w-[100%] my-4 flex-col items-center justify-center gap-4 md:flex-row">
+      <div className="my-4 flex w-[100%] flex-col items-center justify-center gap-4 md:flex-row">
         <div className="w-[100%]">
-          <h4 className="text-white mb-4 text-center text-lg flex-1">Wine & Beer</h4>
+          <h4 className="mb-4 flex-1 text-center font-['Cormorant_Upright'] text-xl  text-white">
+            Wine & Beer
+          </h4>
           <ul className="">
             {data.wines.map((wine, index) => (
               <WineItem key={wine.item + index} wine={wine} />
@@ -37,7 +39,7 @@ const SpecialMenu = () => {
           </ul>
         </div>
 
-        <div className="flex-center my-4 h-[50%]  md:w-[100%] w-[360px] mx-4 ">
+        <div className="flex-center mx-4 my-4 aspect-square sm:w-[50%]  md:w-[100%] ">
           <img
             src={images.menu}
             alt="menu img"
@@ -45,9 +47,11 @@ const SpecialMenu = () => {
           />
         </div>
 
-        <div className=" w-[100%] mt-4">
-          <h4 className="text-white mb-4 text-lg text-center flex-1">Cocktails</h4>
-          <ul >
+        <div className=" mt-4 w-[100%]">
+          <h4 className="mb-4 flex-1 text-center text-xl text-white  font-['Cormorant_Upright']">
+            Cocktails
+          </h4>
+          <ul>
             {data.cocktails.map((cocktail, index) => (
               <CocktailItem key={cocktail.item + index} cocktail={cocktail} />
             ))}
