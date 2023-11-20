@@ -8,13 +8,14 @@ const SubHeading = ({ title, children, type }) => {
   const style = {
     normal: base + ``,
     flex: base + `flex-center text-lightGrey text-center`,
+    // large: base + `text-lg`
   };
 
   return (
     <div className={style[type]}>
-      <p >{title}</p>
+      <p>{title}</p>
       <img src={images.spoon} alt="spoon" className="spoon-img mb-4 mt-1" />
-      <p className="text-lg text-golden mb-8">{children}</p>
+      <h1 className="mb-8 text-[20px] text-golden">{children}</h1>
     </div>
   );
 };
