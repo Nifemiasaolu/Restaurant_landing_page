@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./SpecialMenu.css";
 import { images, data } from "../../constants";
 import { SubHeading } from "../../components";
 import WineItem from "./WineItem";
@@ -34,7 +33,7 @@ const SpecialMenu = () => {
           </h4>
           <ul className="">
             {data.wines.map((wine, index) => (
-              <WineItem key={wine.item + index} wine={wine} />
+              <WineItem key={wine.title} wine={wine} />
             ))}
           </ul>
         </div>
@@ -53,7 +52,7 @@ const SpecialMenu = () => {
           </h4>
           <ul>
             {data.cocktails.map((cocktail, index) => (
-              <CocktailItem key={cocktail.item + index} cocktail={cocktail} />
+              <CocktailItem key={cocktail.title} cocktail={cocktail} />
             ))}
           </ul>
         </div>
