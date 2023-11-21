@@ -24,7 +24,7 @@ const Intro = () => {
   }
 
   return (
-    <div className="h-screen relative">
+    <div className="relative h-screen">
       <video
         src={meal}
         ref={vidRef}
@@ -32,11 +32,15 @@ const Intro = () => {
         type="video/mp4"
         controls={false}
         muted
-        className="w-[100%] aspect-video object-cover"
+        className=" h-full w-full object-cover"
       />
 
-      <div className="flex-center absolute inset-x-auto inset-y-4 bg-black-200">
-        <div className="flex-center" onClick={handleVideo}>
+      <div className="flex-center absolute inset-0 z-10 bg-black opacity-[.65] ">
+        <div
+          className="flex-center aspect-square w-[100px] cursor-pointer 
+          rounded-full border-2 border-solid border-golden"
+          onClick={handleVideo}
+        >
           {playVideo ? (
             <BsPauseFill color="#fff" fontSize={30} />
           ) : (
