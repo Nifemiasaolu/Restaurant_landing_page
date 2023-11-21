@@ -10,6 +10,11 @@ import AnchorTag from "../../ui/AnchorTag";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  
+  function handleClick() {
+    setToggleMenu((toggle) => !toggle);
+    
+  }
 
   return (
     <nav
@@ -37,7 +42,7 @@ const Navbar = () => {
       <div className="flex sm:hidden">
         <GiHamburgerMenu
           className="text-white cursor-pointer"
-          onClick={() => setToggleMenu(true)}
+          onClick={handleClick}
         />
 
         {toggleMenu && (
@@ -49,7 +54,7 @@ const Navbar = () => {
             <MdOutlineRestaurantMenu
               className="absolute right-5 top-5 cursor-pointer 
               text-[27px] text-golden "
-              onClick={() => setToggleMenu(false)}
+              onClick={handleClick}
             />
 
             <ul className="">
