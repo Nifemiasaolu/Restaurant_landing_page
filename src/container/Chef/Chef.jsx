@@ -10,7 +10,7 @@ const Chef = () => (
       <img
         src={images.chef}
         alt="Chef img"
-        className="w-[15rem] sm:w-[20rem]"
+        className="w-[18rem] sm:w-[20rem]"
       />
     </div>
 
