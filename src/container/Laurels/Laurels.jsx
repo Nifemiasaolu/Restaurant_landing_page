@@ -15,7 +15,7 @@ const Laurels = () => {
           Our Laurels
         </SubHeading>
 
-        <ul className="mb-[3rem] mt-[1rem] w-[100%] flex flex-wrap items-start justify-start gap-8 sm:flex-col">
+        <ul className="mb-[3rem] mt-[1rem] w-[100%] flex flex-col items-start justify-start gap-8 sm:flex-col">
           {data.awards.map((award) => (
             <AwardItem award={award} key={award.title} />
           ))}
