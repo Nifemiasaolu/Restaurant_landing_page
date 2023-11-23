@@ -6,9 +6,7 @@ import Button from "../../ui/Button";
 
 const Footer = () => {
   return (
-    <div
-      className="flex-center flex-col bg-black p-[6rem]"
-    >
+    <div className="flex-center flex-col bg-black p-[6rem]">
       <div className="flex-center flex-col ">
         <SubHeading title="newsletter" type="flex">
           subscribe to our newsletter
@@ -16,12 +14,12 @@ const Footer = () => {
         <p className="text-xs text-lightGrey">And never miss latest Updates</p>
       </div>
 
-      <div className="my-4 flex flex-col md:flex-row">
+      <div className="my-4 flex  flex-col md:flex-row md:gap-4">
         <input
           type="text"
           id="newsletter"
           placeholder="Email Address"
-          className="px-4 py-1 rounded-md bg-black border text-white border-lightGrey placeholder:text-xs placeholder:text-lightGrey"
+          className="rounded-md border border-lightGrey bg-black px-4 py-1 text-lightGrey placeholder:text-xs placeholder:text-lightGrey"
         />
         <Button type="small">Subscribe</Button>
       </div>
