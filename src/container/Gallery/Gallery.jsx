@@ -33,7 +33,10 @@ const Gallery = () => {
   }
 
   return (
-    <div className="flex-center flex-col overflow-hidden bg-black py-8 pl-[4rem] md:flex-row md:pr-8">
+    <div
+      className="flex-center flex-col overflow-hidden bg-black
+     py-8 md:flex-row md:pl-[4rem] md:pr-8"
+    >
       <div
         className="flex min-w-[400px] flex-1 flex-col items-start 
         justify-center px-[4rem] py-[2rem] md:py-[8rem]"
