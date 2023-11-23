@@ -7,11 +7,10 @@ import Button from "../../ui/Button";
 const Footer = () => {
   return (
     <div
-      className="flex-center flex-col bg-black 
-   p-[6rem] md:flex-row"
+      className="flex-center flex-col bg-black p-[6rem]"
     >
-      <div>
-        <SubHeading title="newsletter" type="normal">
+      <div className="flex-center flex-col ">
+        <SubHeading title="newsletter" type="flex">
           subscribe to our newsletter
         </SubHeading>
         <p className="text-xs text-lightGrey">And never miss latest Updates</p>
