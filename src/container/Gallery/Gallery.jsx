@@ -52,18 +52,12 @@ const Gallery = () => {
       </div>
 
       <div className="flex-center relative flex w-[70%] flex-1 flex-row">
-        {" "}
-        {/*images */}
         <div className="flex w-max flex-row overflow-hidden" ref={scrollRef}>
-          {" "}
-          {/*container */}
           {galleryImages.map((img, index) => (
             <div
               className="flex-center relative mr-2 h-[400px] min-w-[301px]"
               key={`gallery-image-${index + 1}`}
             >
-              {" "}
-              {/**images card*/}
               <img
                 src={img}
                 alt="gallery"
@@ -73,8 +67,7 @@ const Gallery = () => {
               <BsInstagram
                 className="absolute cursor-pointer text-white
                opacity-[0.5] transition duration-500 ease-linear hover:opacity-[1]"
-              />{" "}
-              {/**image icon*/}
+              />
             </div>
           ))}
         </div>
@@ -82,14 +75,11 @@ const Gallery = () => {
           className="absolute bottom-[5%] flex w-full items-center 
         justify-center"
         >
-          {" "}
-          {/**images arrow*/}
           <BsArrowLeftShort
             className="cursor-pointer rounded-md bg-black text-[2rem] 
             text-golden hover:text-white"
             onClick={() => scroll("left")}
-          />{" "}
-          {/**arrow  icon*/}
+          />
           <BsArrowRightShort
             className="cursor-pointer rounded-md bg-black text-[2rem] 
             text-golden hover:text-white"
