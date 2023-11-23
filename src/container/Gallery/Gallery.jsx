@@ -33,10 +33,10 @@ const Gallery = () => {
   }
 
   return (
-    <div className="flex-center flex-col md:flex-row bg-black py-8 pl-[4rem] md:pr-8 overflow-hidden">
+    <div className="flex-center flex-col overflow-hidden bg-black py-8 pl-[4rem] md:flex-row md:pr-8">
       <div
         className="flex min-w-[400px] flex-1 flex-col items-start 
-        justify-center py-[2rem] md:py-[8rem] px-[4rem]"
+        justify-center px-[4rem] py-[2rem] md:py-[8rem]"
       >
         <SubHeading title="instagram" type="normal">
           Photo Gallery
@@ -48,7 +48,7 @@ const Gallery = () => {
         <Button type="small">View More</Button>
       </div>
 
-      <div className="relative flex-center flex w-[70%] flex-1 flex-row">
+      <div className="flex-center relative flex w-[70%] flex-1 flex-row">
         {" "}
         {/*images */}
         <div className="flex w-max flex-row overflow-hidden" ref={scrollRef}>
@@ -75,8 +75,10 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-        <div className="absolute bottom-[5%] flex w-full items-center 
-        justify-center">
+        <div
+          className="absolute bottom-[5%] flex w-full items-center 
+        justify-center"
+        >
           {" "}
           {/**images arrow*/}
           <BsArrowLeftShort
