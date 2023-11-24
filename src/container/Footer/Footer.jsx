@@ -1,33 +1,68 @@
-import React from "react";
-
-import { images } from "../../constants";
 import { SubHeading } from "../../components";
-import Button from "../../ui/Button";
+import { BsInstagram, BsTwitter, BsFacebook, BsArrowUp } from "react-icons/bs";
 
-const Footer = () => {
+function Footer() {
+  const note = `"The best way to find yourself, is to lose yourself in the service of others"`;
+
   return (
-    <div className="flex-center flex-col bg-black section-padding ">
-      <div className="flex-center flex-col ">
-        <SubHeading title="newsletter" type="subscribe">
-          subscribe to our newsletter
-        </SubHeading>
-        <p className="text-xs text-lightGrey">And never miss latest Updates</p>
+    <div className="app-bg section-padding relative">
+      <div className="flex w-full  flex-col gap-8 md:flex-row">
+        <div className=" flex w-full flex-col items-center text-xs text-lightGrey">
+          <p className="p-cormorant pb-4 text-sm text-golden lg:pb-2 ">
+            Contact Us
+          </p>
+
+          <div className="flex-center leading-0 flex flex-col gap-1">
+            <address className="p-opensans normal-case text-lightGrey ">
+              9/10, 53rd Str, New York NY, USA
+            </address>
+
+            <span className="p-opensans text-[10px] normal-case text-lightGrey md:text-xs">
+              +1 272-358-1352
+            </span>
+            <span className="p-opensans text-[10px] normal-case text-lightGrey md:text-xs">
+              +1 763-540-3528
+            </span>
+          </div>
+        </div>
+
+        <div className="flex w-full flex-col ">
+          <SubHeading format="footer" title="gericht" type="footer">
+            {note}
+          </SubHeading>
+
+          <div className="flex-center flex cursor-pointer gap-3 text-lightGrey">
+            <BsInstagram className="hover:text-golden" />
+            <BsTwitter className="hover:text-golden" />
+            <BsFacebook className="hover:text-golden" />
+          </div>
+        </div>
+
+        <div className="flex w-full flex-col items-center text-xs text-lightGrey">
+          <p className="p-cormorant pb-4  text-sm text-golden">Working Hours</p>
+
+          <div className="flex-center flex flex-col gap-2">
+            <p className="font-['Open_Sans']  text-xs normal-case text-lightGrey">
+              Monday - Friday: 08:00 am - 12:00 am
+            </p>
+            <p className="font-['Open_Sans'] text-xs normal-case text-lightGrey">
+              Saturday - Sunday: 07:00 am - 11:00 am
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="my-4 flex flex-col  md:flex-row md:gap-4">
-        <div>
-          <input
-            type="text"
-            id="newsletter"
-            placeholder="Email Address"
-            className="rounded-md border border-lightGrey bg-black
-             px-4 py-1 text-lightGrey placeholder:text-xs placeholder:text-lightGrey"
-          />
-        </div>
-        <Button type="footer">Subscribe</Button>
+      <div className="flex-center mt-20 flex text-xs text-lightGrey">
+        <p>2021 Gericht, All Rights reserved. </p>
+      </div>
+
+      <div className="aspect-square w-[10%] rounded-md border 
+      border-solid bg-black text-white flex-center">
+        
+        <BsArrowUp />
       </div>
     </div>
   );
-};
+}
 
 export default Footer;
