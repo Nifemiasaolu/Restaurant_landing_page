@@ -56,11 +56,14 @@ function Footer() {
         <p>2021 Gericht, All Rights reserved. </p>
       </div>
 
-      <div className="aspect-square w-[10%] rounded-md border 
-      border-solid bg-black text-white flex-center">
-        
-        <BsArrowUp />
-      </div>
+      {/* <div
+        className="flex-center fixed right-10 aspect-square w-[2rem] rounded-md
+      border border-solid bg-black text-lightGrey hover:text-golden"
+      >
+        <a href="home">
+          <BsArrowUp className="aspect-square w-[full]" />
+        </a>
+      </div> */}
     </div>
   );
 }
