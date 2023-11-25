@@ -1,5 +1,5 @@
 import { SubHeading } from "../../components";
-import { BsInstagram, BsTwitter, BsFacebook, BsArrowUp } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
 
 function Footer() {
   const note = `"The best way to find yourself, is to lose yourself in the service of others"`;
