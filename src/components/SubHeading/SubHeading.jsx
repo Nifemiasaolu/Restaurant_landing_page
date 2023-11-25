@@ -38,4 +38,4 @@ const SubHeading = ({ title, children, type, format }) => {
 };
 
 export default SubHeading;
-////
+
