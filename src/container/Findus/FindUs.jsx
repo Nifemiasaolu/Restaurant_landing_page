@@ -8,7 +8,7 @@ const FindUs = () => {
   return (
     <div
       id="contact"
-      className="p-[6rem] app-bg flex-center 
+      className="py-[5rem] px-[3rem] app-bg flex-center 
       h-full flex-col md:flex-row "
     >
       <div className="mb-[4rem] w-full flex justify-center items-start flex-col ">
