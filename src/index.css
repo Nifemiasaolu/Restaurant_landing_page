@@ -4,7 +4,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-[6rem] py-[4rem] sm:px-[2rem];
+    @apply px-[3rem] py-[4rem] sm:px-[2rem];
   }
 
   .flex-center {
