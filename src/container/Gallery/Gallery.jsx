@@ -20,7 +20,7 @@ const galleryImages = [
 const Gallery = () => {
   const scrollRef = useRef(null);
 
-  console.log(scrollRef);
+  // console.log(scrollRef);
 
   function scroll(direction) {
     const { current } = scrollRef;
