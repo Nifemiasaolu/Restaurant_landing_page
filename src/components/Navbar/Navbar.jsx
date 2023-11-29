@@ -13,7 +13,10 @@ const Navbar = () => {
   
   function handleClick() {
     setToggleMenu((toggle) => !toggle);
-    
+  }
+
+  function closeModal(){
+    setToggleMenu(false);
   }
 
   return (
@@ -59,7 +62,7 @@ const Navbar = () => {
 
             <ul className="">
               {menus.map((item) => (
-                <NavbarItem item={item} key={item.id} />
+                <NavbarItem item={item} key={item.id} onClick={closeModal}/>
               ))}
             </ul>
           </div>
